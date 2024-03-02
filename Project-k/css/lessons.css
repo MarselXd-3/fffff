@@ -1,0 +1,332 @@
+
+body::before {
+    background-image: url("../images/ShadowDragon2.png");
+}
+
+/* PHONE CHECKER */
+
+.phone_block {
+    padding: 100px 0;
+}
+
+.inner_phone_block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid var(--orange);
+    height: 300px;
+    border-radius: 40px;
+    align-items: center;
+    
+}
+
+.form_phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_phone button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* TAB SLIDER */
+.inner_tab_slider{
+    border-radius: 20px;
+    border: 3px solid rgb(107, 7, 229); 
+    animation: glow 1.5s infinite alternate; 
+}
+
+
+.tab_slider {
+    padding: 150px 0;
+
+}
+
+
+.tab_content_block {
+    width: 700px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+}
+
+
+
+
+.tab_content_items {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    margin-right: 40px;
+    
+}
+
+.tab_content_item {
+    padding: 20px ;
+    width: 250px; 
+    color: rgb(224, 224, 224);
+    border: 1px solid var(--orange);
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    transition: background-color  0.3s;
+}
+
+.tab_content_item:hover {
+    background-color: black ; 
+    color: rgb(71, 6, 142); 
+}
+
+
+
+
+.tab_content_item_active {
+    background: black;
+    color: rgb(253, 253, 253);
+    border: 3px solid rgb(107, 7, 229); 
+    animation: glow 1.5s infinite alternate; 
+}
+
+@keyframes glow {
+    0% {
+        border-color: rgb(107, 7, 229);
+        box-shadow: 0 0 10px rgb(107, 7, 229); 
+    }
+    100% {
+        border-color: rgb(107, 7, 229, 0.5);
+        box-shadow: 0 0 20px rgb(107, 7, 229, 0.5); 
+    }
+}
+
+.tab_contents_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.tab_content_block {
+    width: 70%; 
+    height: 100%; 
+    object-fit: contain;
+    position: relative; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image_container img{
+    border-radius: 10px;
+    border: 3px solid rgb(107, 7, 229); 
+    animation: glow 1.5s infinite alternate; 
+
+}
+
+/* COVERSTER */
+
+*{
+  box-sizing: border-box;
+
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+
+}
+
+.container .product-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container .product-container .product{
+  flex:1 1 300px;
+  padding:20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  text-align: center;
+  background-color: rgba(40, 36, 36, 0.653);
+}
+
+.container .product-container .product img{
+  height: 180px;
+}
+
+.container .product-container .product h3{
+  font-size: 25px;
+  color:#666;
+}
+
+.container .product-container .product .amount{
+  padding:10px 0;
+  color:#540eed;
+  font-weight: bolder;
+}
+
+.container .product-container .product .amount .dollar{
+  font-size: 20px;
+}
+
+.container .product-container .product .amount .price{
+  font-size: 35px;
+}
+
+.container .product-container .product .btn{
+  display: inline-block;
+  border-radius: 50px;
+  background:#333;
+  font-size: 17px;
+  color:#fff;
+  padding:8px 50px;
+  margin:8px 0;
+  transition: .2s ease-out;
+  font-weight: bolder;
+}
+
+.container .product-container .product .btn:hover{
+  opacity: .8;
+  letter-spacing: 2px;
+}
+
+.container .currency-toggler{
+  margin:15px 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding:20px;
+  border-radius: 5px;
+  background:#e5dddd;
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
+.container .currency-toggler span{
+  font-weight: bolder;
+  color:#666;
+  font-size: 20px;
+}
+
+.container .currency-toggler .toggler{
+  margin:0 10px;
+  height:50px;
+  width:150px;
+  border-radius: 50px;
+  background:#5e06eb;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .currency-toggler .toggler::before{
+  content: '';
+  position: absolute;
+  top:5px; left:7px;
+  height:40px;
+  width:40px;
+  background:#240451be;
+  border-radius: 50%;
+  transition: .2s ease-out;
+}
+
+.container .currency-toggler .toggler.active::before{
+  left: calc(100% - 47px);
+}
+
+
+
+
+
+/*------CARD SWITCHER------*/
+
+.card_switcher {
+    padding: 100px 0;
+}
+
+.card {
+    width: 500px;
+    height: 150px;
+    border: 1px solid var(--orange);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.card p {
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.card span {
+    color: white;
+    font-size: 30px;
+}
+
+.inner_card_switcher {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*-------CONVERTER--------*/
+
+
+.converter {
+    padding: 100px 0;
+}
+
+.inner_converter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.inner_converter > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------WEATHER------*/
+
+.weather {
+    padding: 100px 0;
+}
+
+.inner_weather > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.inner_weather {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+hr {
+    width: 100%;
+}
